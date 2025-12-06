@@ -1,0 +1,162 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modalContent {
+    background: linear-gradient(135deg, rgba(19,9,155,0.95), rgba(74,20,140,0.9));
+    border: 1px solid rgba(0,217,255,0.2);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 80px rgba(0, 217, 255, 0.1);
+    backdrop-filter: blur(20px);
+    max-width: 520px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, rgba(0,217,255,0.2), rgba(166,77,170,0.2));
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    color: var(--accent-color);
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10001;
+    backdrop-filter: blur(10px);
+}
+
+.closeBtn:hover {
+    background: linear-gradient(135deg, rgba(0,217,255,0.4), rgba(166,77,170,0.3));
+    transform: scale(1.15) rotate(90deg);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.closeBtn:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.modalHeader {
+    padding: 24px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.modalImg {
+    height: 160px;
+    width: 160px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 24px rgba(0, 217, 255, 0.25));
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(166,77,170,0.08));
+    border-radius: 16px;
+    border: 1px solid rgba(0, 217, 255, 0.15);
+}
+
+.modalBody {
+    padding: 32px 24px;
+    color: #fff;
+}
+
+.modalBody h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+.modalDescription {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+}
+
+.ctaBtn {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    color: #000;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 32px;
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 217, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ctaBtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0, 217, 255, 0.5);
+}
+
+.ctaBtn:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .modalContent {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .modalBody {
+        padding: 24px 16px;
+    }
+
+    .modalBody h2 {
+        font-size: 24px;
+    }
+
+    .modalDescription {
+        font-size: 14px;
+    }
+}
