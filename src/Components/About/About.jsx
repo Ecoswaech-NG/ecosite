@@ -21,29 +21,34 @@ function About () {
                 <img src={about_img2} alt="" />
             </div>
             <div className={aboutCSS.about_content}>
-                <small className="section_title"> ( PRODUCTS ) </small>
-                <h2> Solutions for all EV <br /><span> Charging Solutions </span></h2>
-                <p> Download our EV charger finder app today and experience a whole new level of EV driving</p>
+                <h2> Why <span> Ecoswaech </span></h2>
+                <p>We're not just building charging stations — we're building the ecosystem that powers every charge.</p>
+                <p className={aboutCSS.enables_text}><strong>Ecoswaech enables:</strong></p>
                 <div className={aboutCSS.about_Cards}>
                     <div className={aboutCSS.card}>
-                        <img src={about_card_img1} alt="about-card-li" />
-                        <h3> WARRANTY EXTENSIONS </h3>
-                        <p>Enjoy maximum benefits when you lodge your charging station on to our charging network. Our Charging management system is second to none</p>
+                        <img src={about_card_img1} alt="Affordable access" />
+                        <h3> Affordable Access to EV Charging </h3>
+                        <p>Making electric vehicle charging accessible and affordable for everyone, ensuring cost-effective solutions for all users.</p>
                     </div>
                     <div className={aboutCSS.card}>
-                        <img src={about_card_img2} alt="about-card-li" />
-                        <h3> MARKETPLACE EXTENSIONS </h3>
-                        <p>Enjoy maximum benefits when you lodge your charging station on to our charging network. Our Charging management system is second to none</p>
+                        <img src={about_card_img2} alt="Reliable infrastructure" />
+                        <h3> Reliable Infrastructure Uptime </h3>
+                        <p>Ensuring maximum availability and reliability of charging infrastructure with 24/7 monitoring and support.</p>
                     </div>
                     <div className={aboutCSS.card}>
-                        <img src={about_card_img3} alt="about-card-li" />
-                        <h3> FLEET MANAGEMENT </h3>
-                        <p>Enjoy maximum benefits when you lodge your charging station on to our charging network. Our Charging management system is second to none</p>
+                        <img src={about_card_img3} alt="Intelligent energy" />
+                        <h3> Intelligent Energy Use for Fleets </h3>
+                        <p>AI-powered energy optimization for fleet operations, reducing costs and maximizing efficiency.</p>
                     </div>
                     <div className={aboutCSS.card}>
-                        <img src={about_card_img3} alt="about-card-li" />
-                        <h3> FLEET MANAGEMENT </h3>
-                        <p>Enjoy maximum benefits when you lodge your charging station on to our charging network. Our Charging management system is second to none</p>
+                        <img src={about_card_img1} alt="Scalable solutions" />
+                        <h3> Hardware and Software That Scale </h3>
+                        <p>Scalable solutions that grow with your needs, from single chargers to enterprise-level deployments.</p>
+                    </div>
+                    <div className={aboutCSS.card}>
+                        <img src={about_card_img2} alt="Micro-mobility" />
+                        <h3> Inclusion of Micro-mobility and Shared Fleets </h3>
+                        <p>Supporting all forms of electric mobility including e-bikes, scooters, and shared fleet services.</p>
                     </div>
                 </div>
             </div>

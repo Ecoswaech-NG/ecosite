@@ -26,11 +26,8 @@ function Nav () {
                 <ul ref={menu}>
                     {/* Only create <Link> for the four routed pages */}
                     <li><Link to="/" onClick={linkClickHandler}>HOME</Link></li> 
-                    
-                    {/* PRODUCTS and OUR SERVICES link to Home or a specific section on Home */}
-                    {/* For now, just linking to Home, or you can use regular <a> tags with #IDs for scrolling */}
-                    <li><a href="#products">PRODUCTS</a></li> 
-                    <li><a href="#services">OUR SERVICES</a></li> 
+                    <li><Link to="/products" onClick={linkClickHandler}>PRODUCTS</Link></li> 
+                    <li><Link to="/services" onClick={linkClickHandler}>OUR SERVICES</Link></li> 
                     
                     <li><Link to="/about" onClick={linkClickHandler}>ABOUT US</Link></li> 
                     <li><Link to="/blog" onClick={linkClickHandler}>BLOG</Link></li> 
