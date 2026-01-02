@@ -1,0 +1,75 @@
+.hero{
+  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #13099b 0%, #921c98 50%, #00d9ff 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/hero-about.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  filter: grayscale(20%);
+}
+
+.heroInner{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.kicker{
+  display: inline-block;
+  color: #00d9ff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title{
+  margin: 6px 0 10px 0;
+  font-size: clamp(34px, 6vw, 72px);
+  line-height: 1.03;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.breadcrumb{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgba(255,255,255,0.85);
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.breadcrumb a{
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+
+.breadcrumb span{ color: rgba(255,255,255,0.6); }
+
+/* make sure hero is responsive */
+@media (max-width: 900px){
+  .hero{ height: 360px; }
+  .title{ font-size: clamp(28px, 8vw, 48px); }
+}
+
+@media (max-width: 600px){
+  .hero{ height: 300px; }
+  .title{ font-size: 28px; }
+}

@@ -4,7 +4,6 @@ import about_card_img1 from './../../assets/about-card01.png';
 import about_card_img2 from './../../assets/about-card02.png';
 import about_card_img3 from './../../assets/about-card03.png';
 import about_img from './../../assets/about-img-.jpg';
-import about_img2 from './../../assets/about-img-1.jpg';
 
 function About () {
     return (
@@ -17,8 +16,7 @@ function About () {
         </div>
         <div className={aboutCSS.about}>
             <div className={aboutCSS.about_img}>
-                <img src={about_img} alt="" />
-                <img src={about_img2} alt="" />
+                <img src={about_img} alt="About Ecoswaech" />
             </div>
             <div className={aboutCSS.about_content}>
                 <h2> Why <span> Ecoswaech </span></h2>
@@ -44,11 +42,6 @@ function About () {
                         <img src={about_card_img1} alt="Scalable solutions" />
                         <h3> Hardware and Software That Scale </h3>
                         <p>Scalable solutions that grow with your needs, from single chargers to enterprise-level deployments.</p>
-                    </div>
-                    <div className={aboutCSS.card}>
-                        <img src={about_card_img2} alt="Micro-mobility" />
-                        <h3> Inclusion of Micro-mobility and Shared Fleets </h3>
-                        <p>Supporting all forms of electric mobility including e-bikes, scooters, and shared fleet services.</p>
                     </div>
                 </div>
             </div>
