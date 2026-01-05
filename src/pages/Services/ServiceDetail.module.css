@@ -1,0 +1,752 @@
+/* Hero Section */
+.hero_section {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 50%, var(--accent-color) 100%);
+    padding: 96px 13.2% 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.hero_content {
+    max-width: 990px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb:hover {
+    color: #fff;
+    gap: 12px;
+}
+
+.breadcrumb i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.breadcrumb:hover i {
+    transform: translateX(4px);
+}
+
+.hero_icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero_title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero_description {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Content Wrapper */
+.content_wrapper {
+    background: #f8f8f9;
+    padding: 64px 13.2%;
+}
+
+.content_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Overview Section */
+.overview_section {
+    background: #fff;
+    border-radius: 12.8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(19, 9, 155, 0.08);
+}
+
+.overview_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0 0 25px 0;
+}
+
+.overview_section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(28, 21, 72, 0.8);
+    margin: 0;
+}
+
+/* Features Section */
+.features_section {
+    background: #fff;
+    border-radius: 12.8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(19, 9, 155, 0.08);
+}
+
+.features_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0 0 30px 0;
+}
+
+.features_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.feature_card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05) 0%, rgba(146, 28, 152, 0.05) 100%);
+    border-radius: 9.6px;
+    border: 1px solid rgba(19, 9, 155, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature_card:hover {
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.1) 0%, rgba(146, 28, 152, 0.1) 100%);
+    transform: translateX(8px);
+}
+
+.feature_card i {
+    color: var(--accent-color);
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.feature_card span {
+    font-size: 15px;
+    color: rgba(28, 21, 72, 0.85);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Use Cases Section */
+.use_cases_section {
+    background: #fff;
+    border-radius: 12.8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(19, 9, 155, 0.08);
+}
+
+.use_cases_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0 0 30px 0;
+}
+
+.use_cases_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.use_case_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(146, 28, 152, 0.05) 100%);
+    border-radius: 9.6px;
+    border: 1px solid rgba(0, 217, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.use_case_item:hover {
+    border-color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(146, 28, 152, 0.08) 100%);
+    transform: translateY(-4px);
+}
+
+.use_case_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.use_case_item span {
+    font-size: 15px;
+    color: rgba(28, 21, 72, 0.85);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Specs Section */
+.specs_section {
+    background: #fff;
+    border-radius: 12.8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(19, 9, 155, 0.08);
+}
+
+.specs_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0 0 30px 0;
+}
+
+.specs_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.spec_card {
+    padding: 24px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--highlight-color) 100%);
+    border-radius: 9.6px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.spec_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(19, 9, 155, 0.25);
+}
+
+.spec_label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 10px 0;
+}
+
+.spec_value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Benefits Section */
+.benefits_section {
+    background: #fff;
+    border-radius: 12.8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(19, 9, 155, 0.08);
+}
+
+.benefits_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0 0 30px 0;
+}
+
+.benefits_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.benefit_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(146, 28, 152, 0.05) 0%, rgba(0, 217, 255, 0.05) 100%);
+    border-radius: 9.6px;
+    border: 1px solid rgba(146, 28, 152, 0.1);
+    transition: all 0.3s ease;
+}
+
+.benefit_item:hover {
+    border-color: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(146, 28, 152, 0.1) 0%, rgba(0, 217, 255, 0.08) 100%);
+    transform: translateY(-4px);
+}
+
+.benefit_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 14px;
+    animation: spin 2s linear infinite;
+}
+
+.benefit_item:hover .benefit_icon {
+    animation: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.benefit_item span {
+    font-size: 15px;
+    color: rgba(28, 21, 72, 0.85);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta_section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    border-radius: 12.8px;
+    padding: 48px 40px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(19, 9, 155, 0.25);
+}
+
+.cta_section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+}
+
+.cta_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cta_section p {
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    opacity: 0.95;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta_button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: var(--primary-color);
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cta_button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    gap: 12px;
+}
+
+.cta_button i {
+    transition: transform 0.3s ease;
+}
+
+.cta_button:hover i {
+    transform: translateX(5px);
+}
+
+/* Error Section */
+.error_section {
+    padding: 120px 12%;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05) 0%, rgba(146, 28, 152, 0.05) 100%);
+}
+
+.error_content {
+    max-width: 500px;
+}
+
+.error_content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--theme-color);
+    margin: 0 0 15px 0;
+}
+
+.error_content p {
+    font-size: 16px;
+    color: rgba(28, 21, 72, 0.7);
+    margin: 0 0 30px 0;
+    line-height: 1.6;
+}
+
+.back_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.back_link:hover {
+    color: var(--primary-color);
+    gap: 12px;
+}
+
+.back_link i {
+    transition: transform 0.3s ease;
+}
+
+.back_link:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .hero_section {
+        padding: 80px 8.8% 64px;
+    }
+    
+    .hero_title {
+        font-size: 38.4px;
+    }
+    
+    .hero_description {
+        font-size: 17px;
+    }
+
+    .content_wrapper {
+        padding: 50px 8.8%;
+    }
+
+    .content_container {
+        gap: 48px;
+    }
+
+    .overview_section,
+    .features_section,
+    .use_cases_section,
+    .specs_section,
+    .benefits_section,
+    .cta_section {
+        padding: 32px;
+    }
+
+    .overview_section h2,
+    .features_section h2,
+    .use_cases_section h2,
+    .specs_section h2,
+    .benefits_section h2,
+    .cta_section h2 {
+        font-size: 26.4px;
+    }
+
+    .specs_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero_section {
+        padding: 64px 5.5% 50px;
+    }
+    
+    .hero_title {
+        font-size: 28.8px;
+    }
+    
+    .hero_description {
+        font-size: 15px;
+    }
+
+    .hero_icon {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .content_wrapper {
+        padding: 40px 5.5%;
+    }
+
+    .content_container {
+        gap: 35px;
+    }
+
+    .overview_section,
+    .features_section,
+    .use_cases_section,
+    .specs_section,
+    .benefits_section {
+        padding: 25px;
+    }
+
+    .overview_section h2,
+    .features_section h2,
+    .use_cases_section h2,
+    .specs_section h2,
+    .benefits_section h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .overview_section p {
+        font-size: 14px;
+    }
+
+    .features_grid,
+    .use_cases_list,
+    .benefits_list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .feature_card,
+    .use_case_item,
+    .benefit_item {
+        padding: 16px;
+    }
+
+    .specs_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta_section {
+        padding: 32px 20px;
+    }
+
+    .cta_section h2 {
+        font-size: 22px;
+    }
+
+    .cta_section p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .cta_button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .error_section {
+        padding: 80px 5%;
+    }
+
+    .error_content h1 {
+        font-size: 32px;
+    }
+
+    .error_content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_section {
+        padding: 50px 4% 40px;
+    }
+    
+    .hero_title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .hero_description {
+        font-size: 13px;
+    }
+
+    .hero_icon {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .content_wrapper {
+        padding: 30px 4%;
+    }
+
+    .content_container {
+        gap: 25px;
+    }
+
+    .overview_section,
+    .features_section,
+    .use_cases_section,
+    .specs_section,
+    .benefits_section {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .overview_section h2,
+    .features_section h2,
+    .use_cases_section h2,
+    .specs_section h2,
+    .benefits_section h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .overview_section p {
+        font-size: 13px;
+    }
+
+    .feature_card,
+    .use_case_item,
+    .benefit_item {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .feature_card i,
+    .use_case_icon,
+    .benefit_icon {
+        font-size: 16px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .feature_card span,
+    .use_case_item span,
+    .benefit_item span {
+        font-size: 13px;
+    }
+
+    .specs_grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .spec_card {
+        padding: 16px;
+    }
+
+    .spec_label {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .spec_value {
+        font-size: 14px;
+    }
+
+    .cta_section {
+        padding: 24px 16px;
+        border-radius: 8px;
+    }
+
+    .cta_section h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .cta_section p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .cta_button {
+        padding: 9.6px 20px;
+        font-size: 12px;
+    }
+
+    .error_section {
+        padding: 60px 4%;
+        min-height: 50vh;
+    }
+
+    .error_content h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .error_content p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}

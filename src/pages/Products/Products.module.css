@@ -67,7 +67,7 @@
 
 .products_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
     max-width: 1540px;
     margin: 0 auto;
@@ -81,13 +81,11 @@
 
 .product_card {
     background: #fff;
-    padding: 36px 28px;
     border-radius: 12.8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    gap: 19.2px;
     border: 1px solid rgba(19, 9, 155, 0.08);
     position: relative;
     overflow: hidden;
@@ -104,6 +102,34 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.product_image_wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product_card:hover .product_image {
+    transform: scale(1.08);
+}
+
+.product_icon_overlay {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .card_background {
@@ -166,13 +192,6 @@
     border-color: rgba(0, 217, 255, 0.3);
 }
 
-.product_icon_wrapper {
-    position: relative;
-    display: inline-block;
-    width: fit-content;
-    z-index: 1;
-}
-
 .icon_glow {
     position: absolute;
     top: 50%;
@@ -196,13 +215,34 @@
 
 .product_icon {
     font-size: 44.8px;
-    margin-bottom: 4px;
     line-height: 1;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.product_card:hover .product_icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product_content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
     position: relative;
     z-index: 1;
-    display: inline-block;
 }
 
 .product_card:hover .product_icon {
@@ -301,8 +341,30 @@
     }
     
     .products_grid {
-        grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .product_image_wrapper {
+        height: 180px;
+    }
+
+    .product_content {
+        padding: 20px;
+    }
+
+    .product_icon {
+        width: 40px;
+        height: 40px;
+        font-size: 32px;
+    }
+
+    .product_title {
+        font-size: 15px;
+    }
+
+    .product_description {
+        font-size: 11px;
     }
 }
 
@@ -327,21 +389,81 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
-    .product_card {
-        padding: 28px 20px;
+
+    .product_image_wrapper {
+        height: 160px;
+    }
+
+    .product_content {
+        padding: 16px;
     }
     
     .product_title {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .product_description {
-        font-size: 11.2px;
+        font-size: 11px;
     }
     
     .product_icon {
-        font-size: 48px;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+    }
+
+    .explore_link {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_section {
+        padding: 50px 4% 30px;
+    }
+    
+    .hero_title {
+        font-size: 22px;
+    }
+    
+    .hero_description {
+        font-size: 11px;
+    }
+    
+    .products_wrapper {
+        padding: 30px 4%;
+    }
+    
+    .products_grid {
+        gap: 16px;
+    }
+
+    .product_image_wrapper {
+        height: 140px;
+    }
+
+    .product_card {
+        border-radius: 8px;
+    }
+
+    .product_content {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .product_title {
+        font-size: 12px;
+    }
+    
+    .product_description {
+        font-size: 10px;
+    }
+    
+    .product_icon {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
     }
 }
 

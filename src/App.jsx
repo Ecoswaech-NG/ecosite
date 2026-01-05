@@ -9,6 +9,7 @@ import Marketplace from './pages/Marketplace/Index.jsx';
 import Products from './pages/Products/index.jsx';
 import ProductDetail from './pages/Products/ProductDetail.jsx';
 import Services from './pages/Services/index.jsx';
+import ServiceDetail from './pages/Services/ServiceDetail.jsx';
 import TestDriveEV from './pages/TestDriveEV/index.jsx';
 import DealerDetail from './pages/TestDriveEV/DealerDetail.jsx';
 import Ecosystem from './pages/Ecosystem/index.jsx';
@@ -37,6 +38,8 @@ function App () {
         <Route path="/products/:productId" element={<ProductDetail />} />
 
         <Route path="/services" element={<Services />} />
+
+        <Route path="/services/:serviceId" element={<ServiceDetail />} />
 
         <Route path="/testdrive-ev" element={<TestDriveEV />} /> {/* Then add this route in the Routes component */}
         

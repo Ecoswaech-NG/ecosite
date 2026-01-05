@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero_section {
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 50%, var(--accent-color) 100%);
-    padding: 120px 12% 80px;
+    padding: 96px 13.2% 64px;
     position: relative;
     overflow: hidden;
 }
@@ -17,7 +17,7 @@
 }
 
 .hero_content {
-    max-width: 900px;
+    max-width: 990px;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -26,68 +26,62 @@
 
 .hero_tag {
     display: inline-block;
-    font-size: 12px;
+    font-size: 9.6px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #fff;
     background: rgba(255, 255, 255, 0.15);
-    padding: 8px 20px;
-    border-radius: 30px;
-    margin-bottom: 25px;
+    padding: 6.4px 16px;
+    border-radius: 24px;
+    margin-bottom: 20px;
     backdrop-filter: blur(10px);
 }
 
 .hero_title {
-    font-size: 56px;
+    font-size: 44.8px;
     font-weight: 800;
     color: #fff;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     line-height: 1.2;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero_description {
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.7;
     margin: 0;
-    max-width: 700px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .services_wrapper {
-    padding: 80px 12%;
+    padding: 64px 13.2%;
     width: 100%;
-    min-height: 60vh;
-    background: rgb(242, 243, 243);
+    background: #f8f8f9;
 }
 
 .services_container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    max-width: 1400px;
+    max-width: 1540px;
     margin: 0 auto;
-}
-
-/* Main Content */
-.main_content {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
 }
 
 .services_grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.service_card_link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .service_card {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 12.8px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,7 +98,7 @@
 .service_image_wrapper {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -121,16 +115,16 @@
 
 .service_icon {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
     background: rgba(255, 255, 255, 0.98);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 24px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -142,15 +136,15 @@
 }
 
 .service_content {
-    padding: 30px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
     flex-grow: 1;
 }
 
 .service_title {
-    font-size: 21px;
+    font-size: 17.6px;
     font-weight: 700;
     color: var(--theme-color);
     margin: 0;
@@ -159,7 +153,7 @@
 }
 
 .service_description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.75;
     color: rgba(28, 21, 72, 0.75);
     margin: 0;
@@ -167,103 +161,17 @@
     font-weight: 400;
 }
 
-.learn_more {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    margin-top: auto;
-}
-
-.learn_more:hover {
-    color: var(--primary-color);
-    gap: 12px;
-}
-
-.learn_more i {
-    font-size: 16px;
-    transition: transform 0.3s ease;
-}
-
-.learn_more:hover i {
-    transform: translateX(5px);
-}
-
-/* Sidebar */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.advantage_section {
-    background: #fff;
-    border-radius: 16px;
-    padding: 35px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(19, 9, 155, 0.08);
-}
-
-.advantage_title {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--theme-color);
-    margin: 0 0 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.advantage_title i {
-    color: var(--accent-color);
-    font-size: 28px;
-}
-
-.advantage_subtitle {
-    font-size: 16px;
-    color: rgba(28, 21, 72, 0.7);
-    margin: 0 0 25px 0;
-    font-weight: 600;
-}
-
-.advantages_list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.advantage_item {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(28, 21, 72, 0.8);
-}
-
-.advantage_item i {
-    color: var(--accent-color);
-    font-size: 18px;
-    margin-top: 2px;
-    flex-shrink: 0;
-}
-
-.cta_box {
-    background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
-    border-radius: 16px;
-    padding: 35px;
-    color: #fff;
+/* CTA Section */
+.cta_section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    padding: 64px 13.2%;
     text-align: center;
-    box-shadow: 0 8px 30px rgba(19, 9, 155, 0.2);
+    color: #fff;
     position: relative;
     overflow: hidden;
 }
 
-.cta_box::before {
+.cta_section::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -279,22 +187,25 @@
     50% { opacity: 0.8; }
 }
 
-.cta_box h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
-    color: #fff;
+.cta_content {
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
-.cta_box p {
-    font-size: 15px;
-    margin: 0 0 25px 0;
+.cta_section h2 {
+    font-size: 33.6px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.cta_section p {
+    font-size: 16px;
+    margin: 0 0 30px 0;
     opacity: 0.95;
     line-height: 1.7;
-    position: relative;
-    z-index: 1;
 }
 
 .cta_button {
@@ -303,103 +214,236 @@
     gap: 8px;
     background: #fff;
     color: var(--primary-color);
-    padding: 14px 28px;
-    border-radius: 10px;
+    padding: 11.2px 28px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cta_button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     gap: 12px;
 }
 
 .cta_button i {
     transition: transform 0.3s ease;
+    font-size: 14px;
 }
 
 .cta_button:hover i {
-    transform: translateX(5px);
+    transform: translateX(4px);
 }
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .hero_section {
-        padding: 100px 8% 60px;
+        padding: 80px 8.8% 50px;
     }
     
     .hero_title {
-        font-size: 42px;
+        font-size: 33.6px;
     }
     
     .hero_description {
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .services_wrapper {
-        padding: 60px 8%;
-    }
-    
-    .services_container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .main_content {
-        order: 1;
-    }
-
-    .sidebar {
-        order: 2;
+        padding: 50px 8.8%;
     }
 
     .services_grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service_image_wrapper {
+        height: 180px;
+    }
+
+    .service_content {
+        padding: 20px;
+    }
+
+    .service_icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .service_title {
+        font-size: 15px;
+    }
+
+    .cta_section {
+        padding: 50px 8.8%;
+    }
+
+    .cta_section h2 {
+        font-size: 26.4px;
+    }
+
+    .cta_section p {
+        font-size: 14px;
+    }
+
+    .cta_button {
+        padding: 10px 24px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero_section {
-        padding: 80px 5% 50px;
+        padding: 64px 5.5% 40px;
     }
     
     .hero_title {
-        font-size: 36px;
+        font-size: 28.8px;
     }
     
     .hero_description {
-        font-size: 16px;
+        font-size: 13px;
     }
     
     .services_wrapper {
-        padding: 50px 5%;
+        padding: 40px 5.5%;
+    }
+
+    .services_grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .service_image_wrapper {
-        height: 200px;
+        height: 160px;
     }
 
     .service_content {
-        padding: 25px;
+        padding: 16px;
+    }
+
+    .service_icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        top: 12px;
+        right: 12px;
     }
 
     .service_title {
-        font-size: 19px;
+        font-size: 14px;
     }
 
-    .advantage_section,
-    .cta_box {
-        padding: 25px;
+    .service_description {
+        font-size: 13px;
     }
 
-    .advantage_title {
-        font-size: 20px;
+    .learn_more {
+        font-size: 11px;
+    }
+
+    .cta_section {
+        padding: 40px 5.5%;
+    }
+
+    .cta_section h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .cta_section p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .cta_button {
+        padding: 9px 20px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_section {
+        padding: 50px 4% 30px;
+    }
+    
+    .hero_tag {
+        font-size: 8px;
+        padding: 5px 12px;
+        margin-bottom: 12px;
+    }
+
+    .hero_title {
+        font-size: 22px;
+    }
+    
+    .hero_description {
+        font-size: 12px;
+    }
+    
+    .services_wrapper {
+        padding: 30px 4%;
+    }
+
+    .services_grid {
+        gap: 12px;
+    }
+
+    .service_image_wrapper {
+        height: 140px;
+    }
+
+    .service_card {
+        border-radius: 8px;
+    }
+
+    .service_content {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .service_icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .service_title {
+        font-size: 13px;
+    }
+
+    .service_description {
+        font-size: 12px;
+    }
+
+    .learn_more {
+        font-size: 10px;
+    }
+
+    .cta_section {
+        padding: 30px 4%;
+    }
+
+    .cta_section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .cta_section p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .cta_button {
+        padding: 8px 16px;
+        font-size: 10px;
     }
 }
 
