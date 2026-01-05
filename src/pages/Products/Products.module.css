@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero_section {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--highlight-color) 100%);
-    padding: 120px 12% 80px;
+    padding: 96px 13.2% 64px;
     position: relative;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@
 }
 
 .hero_content {
-    max-width: 900px;
+    max-width: 990px;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -27,39 +27,39 @@
 
 .hero_tag {
     display: inline-block;
-    font-size: 12px;
+    font-size: 9.6px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2.4px;
     text-transform: uppercase;
     color: var(--accent-color);
     background: rgba(255, 255, 255, 0.1);
-    padding: 8px 20px;
-    border-radius: 30px;
-    margin-bottom: 25px;
+    padding: 6.4px 16px;
+    border-radius: 24px;
+    margin-bottom: 20px;
     backdrop-filter: blur(10px);
 }
 
 .hero_title {
-    font-size: 56px;
+    font-size: 44.8px;
     font-weight: 800;
     color: #fff;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     line-height: 1.2;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero_description {
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.7;
     margin: 0;
-    max-width: 700px;
+    max-width: 770px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .products_wrapper {
-    padding: 80px 12%;
+    padding: 64px 13.2%;
     width: 100%;
     min-height: 60vh;
     background: rgb(242, 243, 243);
@@ -67,21 +67,27 @@
 
 .products_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 35px;
-    max-width: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    gap: 28px;
+    max-width: 1540px;
     margin: 0 auto;
+}
+
+.product_card_link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .product_card {
     background: #fff;
-    padding: 45px 35px;
-    border-radius: 16px;
+    padding: 36px 28px;
+    border-radius: 12.8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 19.2px;
     border: 1px solid rgba(19, 9, 155, 0.08);
     position: relative;
     overflow: hidden;
@@ -172,8 +178,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
     border-radius: 50%;
     opacity: 0;
@@ -184,13 +190,13 @@
 
 .product_card:hover .icon_glow {
     opacity: 0.4;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .product_icon {
-    font-size: 56px;
-    margin-bottom: 5px;
+    font-size: 44.8px;
+    margin-bottom: 4px;
     line-height: 1;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -205,12 +211,12 @@
 }
 
 .product_title {
-    font-size: 22px;
+    font-size: 17.6px;
     font-weight: 700;
     color: var(--theme-color);
     margin: 0;
     line-height: 1.4;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
     position: relative;
     z-index: 1;
     transition: color 0.3s ease;
@@ -221,7 +227,7 @@
 }
 
 .product_description {
-    font-size: 15px;
+    font-size: 12px;
     color: rgba(28, 21, 72, 0.75);
     line-height: 1.75;
     margin: 0;
@@ -238,7 +244,7 @@
 
 .card_footer {
     margin-top: auto;
-    padding-top: 15px;
+    padding-top: 12px;
     border-top: 1px solid rgba(19, 9, 155, 0.08);
     position: relative;
     z-index: 1;
@@ -247,10 +253,10 @@
 .explore_link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6.4px;
     color: var(--accent-color);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 11.2px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -279,59 +285,59 @@
 
 @media screen and (max-width: 1024px) {
     .hero_section {
-        padding: 100px 8% 60px;
+        padding: 80px 8.8% 48px;
     }
     
     .hero_title {
-        font-size: 42px;
+        font-size: 33.6px;
     }
     
     .hero_description {
-        font-size: 18px;
+        font-size: 14.4px;
     }
     
     .products_wrapper {
-        padding: 60px 8%;
+        padding: 48px 8.8%;
     }
     
     .products_grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+        gap: 24px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero_section {
-        padding: 80px 5% 50px;
+        padding: 64px 5.5% 40px;
     }
     
     .hero_title {
-        font-size: 36px;
+        font-size: 28.8px;
     }
     
     .hero_description {
-        font-size: 16px;
+        font-size: 12.8px;
     }
     
     .products_wrapper {
-        padding: 50px 5%;
+        padding: 40px 5.5%;
     }
     
     .products_grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
     }
     
     .product_card {
-        padding: 35px 25px;
+        padding: 28px 20px;
     }
     
     .product_title {
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .product_description {
-        font-size: 14px;
+        font-size: 11.2px;
     }
     
     .product_icon {

@@ -7,8 +7,9 @@ import Contact from './pages/Contact/Index.jsx';
 import AppAbout from './pages/AppAbout/Index.jsx';
 import Marketplace from './pages/Marketplace/Index.jsx';
 import Products from './pages/Products/index.jsx';
+import ProductDetail from './pages/Products/ProductDetail.jsx';
 import Services from './pages/Services/index.jsx';
-import TestDriveEV from './pages/TestDriveEV/index.jsx';  // Add this import
+import TestDriveEV from './pages/TestDriveEV/index.jsx';
 import DealerDetail from './pages/TestDriveEV/DealerDetail.jsx';
 import Ecosystem from './pages/Ecosystem/index.jsx';
 
@@ -32,6 +33,8 @@ function App () {
         <Route path="/marketplace" element={<Marketplace />} />
 
         <Route path="/products" element={<Products />} />
+
+        <Route path="/products/:productId" element={<ProductDetail />} />
 
         <Route path="/services" element={<Services />} />
 

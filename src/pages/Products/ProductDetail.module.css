@@ -1,0 +1,541 @@
+:root {
+    --primary-color: #13099b;
+    --secondary-color: #921c98;
+    --accent-color: #00d9ff;
+    --light-accent: #a8f0f8;
+    --highlight-color: #4a148c;
+    --theme-color: #1C1548;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Hero Section */
+.hero_section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--highlight-color) 100%);
+    padding: 96px 13.2% 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.hero_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero_content {
+    position: relative;
+    z-index: 1;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: inline-block;
+    color: var(--light-accent);
+    text-decoration: none;
+    font-size: 11.2px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.breadcrumb:hover {
+    opacity: 0.8;
+    transform: translateX(-5px);
+}
+
+.hero_product {
+    text-align: center;
+}
+
+.product_hero_icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.hero_title {
+    font-size: 38.4px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 12px 0;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero_tagline {
+    font-size: 17.6px;
+    color: var(--light-accent);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.hero_description {
+    font-size: 12.8px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Main Content */
+.main_content {
+    padding: 0;
+}
+
+.section_title {
+    font-size: 33.6px;
+    font-weight: 800;
+    color: var(--theme-color);
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* Features Section */
+.features_section {
+    padding: 64px 0;
+    background: #fff;
+}
+
+.features_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 24px;
+}
+
+.feature_card {
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(146, 28, 152, 0.05));
+    padding: 28px;
+    border-radius: 9.6px;
+    text-align: center;
+    border: 1px solid rgba(19, 9, 155, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature_card:hover {
+    transform: translateY(-6.4px);
+    box-shadow: 0 12px 30px rgba(19, 9, 155, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.feature_icon {
+    font-size: 38.4px;
+    display: block;
+}
+
+.feature_card h3 {
+    font-size: 14.4px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.feature_card p {
+    font-size: 10.4px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Use Cases Section */
+.usecases_section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(146, 28, 152, 0.05));
+}
+
+.usecases_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+    gap: 24px;
+}
+
+.usecase_card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 9.6px;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.usecase_card:hover {
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.usecase_card h3 {
+    font-size: 14.4px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 12px 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+
+.usecase_card p {
+    font-size: 10.4px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Specs Section */
+.specs_section {
+    padding: 64px 0;
+    background: #fff;
+}
+
+.specs_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 24px;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.spec_card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 32px;
+    border-radius: 9.6px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(19, 9, 155, 0.15);
+    transition: all 0.3s ease;
+}
+
+.spec_card:hover {
+    transform: scale(1.04);
+}
+
+.spec_value {
+    font-size: 28.8px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.spec_label {
+    font-size: 11.2px;
+    font-weight: 600;
+    opacity: 0.95;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* Benefits Section */
+.benefits_section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(146, 28, 152, 0.05));
+}
+
+.benefits_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.benefit_item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px;
+    background: #fff;
+    border-radius: 6.4px;
+    border-left: 3.2px solid var(--secondary-color);
+}
+
+.benefit_check {
+    font-size: 19.2px;
+    color: var(--accent-color);
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: -2px;
+}
+
+.benefit_item p {
+    font-size: 10.4px;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Tech Stack Section */
+.tech_section {
+    padding: 64px 0;
+    background: #fff;
+}
+
+.tech_stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.tech_badge {
+    padding: 9.6px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-radius: 24px;
+    font-size: 11.2px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(19, 9, 155, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tech_badge:hover {
+    transform: translateY(-2.4px);
+    box-shadow: 0 8px 25px rgba(19, 9, 155, 0.3);
+}
+
+/* Pricing Section */
+.pricing_section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(146, 28, 152, 0.05));
+}
+
+.pricing_card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 9.6px;
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.15);
+}
+
+.pricing_text {
+    font-size: 14.4px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    line-height: 1.8;
+}
+
+.btn_get_started {
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn_get_started:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(19, 9, 155, 0.3);
+}
+
+/* CTA Section */
+.cta_section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--highlight-color));
+    color: #fff;
+    text-align: center;
+}
+
+.cta_section h2 {
+    font-size: 33.6px;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+}
+
+.cta_section p {
+    font-size: 14.4px;
+    margin: 0 0 32px 0;
+    opacity: 0.95;
+}
+
+.cta_buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn_primary,
+.btn_secondary {
+    padding: 11.2px 28px;
+    border: none;
+    border-radius: 6.4px;
+    font-size: 11.2px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn_primary {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.btn_primary:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn_secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn_secondary:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* Not Found */
+.not_found {
+    padding: 120px 5%;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not_found h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0 0 15px 0;
+}
+
+.not_found p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 30px 0;
+}
+
+.btn_back {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn_back:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero_section {
+        padding: 64px 4% 48px;
+    }
+
+    .hero_title {
+        font-size: 28.8px;
+    }
+
+    .hero_tagline {
+        font-size: 14.4px;
+    }
+
+    .hero_description {
+        font-size: 10.4px;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .features_section,
+    .usecases_section,
+    .specs_section,
+    .benefits_section,
+    .tech_section,
+    .pricing_section,
+    .cta_section {
+        padding: 48px 0;
+    }
+
+    .feature_card,
+    .usecase_card {
+        padding: 20px;
+    }
+
+    .pricing_card {
+        padding: 24px 16px;
+    }
+
+    .cta_buttons {
+        flex-direction: column;
+    }
+
+    .btn_primary,
+    .btn_secondary {
+        width: 100%;
+    }
+
+    .specs_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta_section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_section {
+        padding: 64px 4% 48px;
+    }
+
+    .hero_product {
+        text-align: center;
+    }
+
+    .product_hero_icon {
+        font-size: 48px;
+    }
+
+    .hero_title {
+        font-size: 19.2px;
+    }
+
+    .tech_stack {
+        gap: 8px;
+    }
+
+    .tech_badge {
+        font-size: 9.6px;
+        padding: 8px 16px;
+    }
+}
