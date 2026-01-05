@@ -32,7 +32,7 @@ function Contact () {
                                 </svg>
                             </div>
                             <h3>Our Location</h3>
-                            <p>456 Innovation Drive, Tech District, Lagos, Nigeria</p>
+                            <p>11, Chief Olisa Shobowale Street, Ikorodu, Lagos, Nigeria</p>
                         </div>
 
                         <div className={styles.contact_card}>
@@ -42,7 +42,7 @@ function Contact () {
                                 </svg>
                             </div>
                             <h3>Phone Number</h3>
-                            <p>+234 (0) 800 ECOSWAE</p>
+                            <p>+234 (0) 707 797 7343</p>
                             <p className={styles.subtext}>Available 24/7 for support</p>
                         </div>
 

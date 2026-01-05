@@ -1,9 +1,7 @@
 import './Hero.css';
 import { Link } from 'react-router-dom';
 import Background from '../Background/Background';
-import user1 from '../../assets/user-01.jpg';
-import user2 from '../../assets/user-02.jpg';
-import user3 from '../../assets/user-03.jpg';
+
 import play_icon from '../../assets/play_icon.png';
 import pause_icon from '../../assets/pause_icon.png';
 
@@ -15,7 +13,6 @@ const Hero = ({heroData, heroCount, setHeroCount, playStatus, setPlayStatus}) =>
                 <div className='hero_text'>
                     <p className='hero_tagline'>FOR EVERYONE, EVERY BUSINESS AND EVERY VEHICLE</p>
                     <h1 className='hero_heading'>
-                        <span className='hero_heading_part1'>POWERING </span>
                         <span className='hero_heading_part2'>THE FUTURE OF <br/> ELECTRIC MOBILITY</span>
                     </h1>
                     <p className='hero_description'>
@@ -29,7 +26,7 @@ const Hero = ({heroData, heroCount, setHeroCount, playStatus, setPlayStatus}) =>
                 </div>
                 
                 <div className='hero_actions'>
-                <button> TEST DRIVE  <i className="ri-roadster-line"></i></button>                    
+                    <Link to="/testdrive-ev"><button> TEST DRIVE  <i className="ri-roadster-line"></i></button></Link>
                     <div className='hero_join_us'>
                         <div className='join_us_profiles'>
                             <span>Explore Ecoswaech EV Ecosystem.</span>

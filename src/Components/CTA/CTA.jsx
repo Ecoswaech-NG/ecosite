@@ -24,7 +24,7 @@ function CTA() {
             <div className={`${CTACSS.CallToAction_Wrapper} ${CTACSS.MarketplaceWrapper}`}>
                 <div className={CTACSS.Content} >
                     <small className="section_title"> ( Visit our Marketplace ) </small>
-                    <h2>Checkout our EV ecosystem marketplace for <span> buying and selling </span> EVs</h2>
+                    <h2>Visit our EV <span> ecosystem marketplace </span> for EVs</h2>
                     <p>Meet buyers and seller of EVs, EV parts and accessories, bikes and much more. 
                         You can also rent an EV for your logistics and delivery services in our marketplace.
                     </p>

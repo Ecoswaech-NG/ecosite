@@ -1,0 +1,455 @@
+/* Hero Section */
+.hero_section {
+    background: linear-gradient(135deg, #13095b 0%, #1e0f7f 50%, #00a651 100%);
+    padding: 120px 12% 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.hero_content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero_tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.hero_title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 25px 0;
+    line-height: 1.2;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero_description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Content */
+.main_content {
+    padding: 0;
+}
+
+.filter_section {
+    padding: 80px 12%;
+    background: linear-gradient(to bottom, #f2f3f3, #fff);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #13095b;
+    margin: 0 0 15px 0;
+}
+
+.section_subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Manufacturers Section */
+.manufacturers_section {
+    padding: 80px 12%;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.manufacturers_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.manufacturer_card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(19, 9, 155, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.manufacturer_card:hover {
+    box-shadow: 0 12px 40px rgba(19, 9, 155, 0.2);
+    transform: translateY(-8px);
+}
+
+.card_header {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(0, 166, 81, 0.05));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #13095b, #00a651);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    box-shadow: 0 4px 15px rgba(19, 9, 155, 0.2);
+}
+
+.rating {
+    text-align: right;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.rating_text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #13095b;
+    display: block;
+}
+
+.reviews {
+    font-size: 12px;
+    color: #999;
+}
+
+.card_body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.manufacturer_name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #13095b;
+    margin: 0;
+}
+
+.manufacturer_desc {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.location_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.location_icon {
+    font-size: 18px;
+}
+
+.location_text {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.vehicles_preview {
+    margin: 10px 0;
+}
+
+.vehicles_title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #13095b;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vehicles_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vehicle_item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle_item:last-child {
+    border-bottom: none;
+}
+
+.vehicle_name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #13095b;
+}
+
+.vehicle_type {
+    font-size: 12px;
+    color: #999;
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+.contact_icon {
+    font-size: 18px;
+}
+
+.contact_text {
+    font-size: 13px;
+    color: #13095b;
+    font-weight: 500;
+}
+
+.card_footer {
+    padding: 20px 25px;
+    border-top: 1px solid #f0f0f0;
+    background: #fafafa;
+}
+
+.btn_test_drive {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #13095b, #00a651);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn_test_drive:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(19, 9, 155, 0.3);
+}
+
+.btn_test_drive:active {
+    transform: scale(0.98);
+}
+
+/* Benefits Section */
+.benefits_section {
+    padding: 80px 12%;
+    background: linear-gradient(135deg, rgba(19, 9, 155, 0.05), rgba(0, 166, 81, 0.05));
+}
+
+.benefits_container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.benefits_title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #13095b;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.benefits_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit_card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(19, 9, 155, 0.1);
+}
+
+.benefit_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(19, 9, 155, 0.15);
+}
+
+.benefit_icon {
+    font-size: 44px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.benefit_card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #13095b;
+    margin: 0 0 12px 0;
+}
+
+.benefit_card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta_section {
+    padding: 80px 12%;
+    background: linear-gradient(135deg, #13095b, #1e0f7f, #00a651);
+    color: #fff;
+    text-align: center;
+}
+
+.cta_content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta_content h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+}
+
+.cta_content p {
+    font-size: 18px;
+    margin: 0 0 35px 0;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.btn_primary {
+    padding: 16px 40px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #13095b;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn_primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 36px;
+    }
+
+    .hero_description {
+        font-size: 16px;
+    }
+
+    .manufacturers_container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter_section {
+        padding: 60px 5%;
+    }
+
+    .manufacturers_section {
+        padding: 60px 5%;
+    }
+
+    .benefits_section {
+        padding: 60px 5%;
+    }
+
+    .cta_section {
+        padding: 60px 5%;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    .benefits_title {
+        font-size: 28px;
+    }
+
+    .cta_content h2 {
+        font-size: 28px;
+    }
+}

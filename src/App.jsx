@@ -8,6 +8,9 @@ import AppAbout from './pages/AppAbout/Index.jsx';
 import Marketplace from './pages/Marketplace/Index.jsx';
 import Products from './pages/Products/index.jsx';
 import Services from './pages/Services/index.jsx';
+import TestDriveEV from './pages/TestDriveEV/index.jsx';  // Add this import
+import DealerDetail from './pages/TestDriveEV/DealerDetail.jsx';
+import Ecosystem from './pages/Ecosystem/index.jsx';
 
 
 function App () {
@@ -31,6 +34,12 @@ function App () {
         <Route path="/products" element={<Products />} />
 
         <Route path="/services" element={<Services />} />
+
+        <Route path="/testdrive-ev" element={<TestDriveEV />} /> {/* Then add this route in the Routes component */}
+        
+        <Route path="/testdrive-ev/dealer/:dealerId" element={<DealerDetail />} />
+        
+        <Route path="/ecosystem" element={<Ecosystem />} />
 
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
